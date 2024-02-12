@@ -24,3 +24,12 @@ body {
 .text-center {
   text-align: center;
 }
+
+.music {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.music img {
+  margin-right: 12px;
+}

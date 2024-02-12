@@ -10,5 +10,20 @@ $("#btn").on("click", function () {
     $("#audio").attr("src", targetSong);
     $("#audio")[0].volume = 0.1; // volumeは任意
     $("#audio")[0].play();
+
+    // 以下は一応入れてますが、やるとしてもたぶんコピペで駆け抜けになると思われるしやらないかも
+    data.results.forEach(function (result) {
+      const trackName = result.trackName;
+      const artistName = result.artistName;
+      const artworkUrl = result.artworkUrl100;
+      const music = `<div class="music">
+        <img src="${artworkUrl}" alt="${trackName}">
+        <div>
+          <p>${trackName}</p>
+          <p>${artistName}</p>
+        </div>
+      </div>`;
+      $("#result").append(music);
+    });
   });
 });
