@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>練習</title>
-    <link rel="stylesheet" href="css/part1-reset.css" />
-    <link rel="stylesheet" href="css/part1-work.css" />
+    <link rel="stylesheet" href="css/day2-reset.css" />
+    <link rel="stylesheet" href="css/day2.css" />
   </head>
 
   <body>
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ここから下に、ブラウザに表示したい内容を記述する ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
 
+    <div class="wrapper">
+      <h1>APIから音楽情報を取得しよう！</h1>
+      <input type="text" id="keyword" />
+      <button id="btn">ボタン</button>
+      <div id="result"></div>
+      <!--以下を追加-->
+      <audio id="audio" src=""></audio>
+    </div>
+
     <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ここから上に、ブラウザに表示したい内容を記述する ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/day2.js"></script>
   </body>
 </html>
