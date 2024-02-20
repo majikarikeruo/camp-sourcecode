@@ -18,9 +18,9 @@ $("#btn").on("click", function () {
       const artworkUrl = result.artworkUrl100;
       const music = `<div class="music">
         <img src="${artworkUrl}" alt="${trackName}">
-        <div>
-          <p>${trackName}</p>
-          <p>${artistName}</p>
+        <div class="music-content">
+          <p class="track-name">${trackName}</p>
+          <p class="artist-name">${artistName}</p>
         </div>
       </div>`;
       $("#result").append(music);
