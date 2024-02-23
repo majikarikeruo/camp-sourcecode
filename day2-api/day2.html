@@ -12,9 +12,14 @@
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ここから下に、ブラウザに表示したい内容を記述する ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
 
     <div class="wrapper">
-      <h1>APIから音楽情報を取得しよう！</h1>
-      <input type="text" id="keyword" />
-      <button id="btn">ボタン</button>
+      <div class="search-condition-panel">
+        <h1 class="heading-title">APIから音楽情報を取得しよう！</h1>
+
+        <div class="text-center">
+          <input type="text" id="keyword" class="input-search" />
+          <button id="btn" class="btn-search">検索する</button>
+        </div>
+      </div>
       <div id="result"></div>
       <!--以下を追加-->
       <audio id="audio" src=""></audio>
@@ -23,6 +28,7 @@
     <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ここから上に、ブラウザに表示したい内容を記述する ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
 
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/sampleJSON.js"></script>
     <script src="js/day2.js"></script>
   </body>
 </html>

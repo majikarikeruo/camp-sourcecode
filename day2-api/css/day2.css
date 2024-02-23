@@ -7,6 +7,12 @@ body {
   margin: auto;
   padding: 80px;
 }
+.search-condition-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
 .heading-title {
   margin-bottom: 40px;
   font-size: 32px;
@@ -32,4 +38,30 @@ body {
 
 .music img {
   margin-right: 12px;
+}
+
+.music-content {
+}
+
+.input-search {
+  padding: 6px 8px;
+}
+
+.btn-search {
+  margin-left: 8px;
+  padding: 4px 14px;
+  border: none;
+  background-color: #3769dd;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.track-name {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.artist-name {
+  font-size: 14px;
 }
