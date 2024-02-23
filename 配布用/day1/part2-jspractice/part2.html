@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>練習</title>
+
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 下の2行はHTMLとCSSを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+    <link rel="stylesheet" href="css/part2-reset.css" />
+    <link rel="stylesheet" href="css/part2.css" />
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 上の2行はHTMLとCSSを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+  </head>
+
+  <body>
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ここから下に、ブラウザに表示したい内容を記述する ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+
+    <div class="wrapper">
+      <div class="vote-header">
+        <h1>投票システム</h1>
+        <p>好きな季節は？</p>
+      </div>
+
+      <div class="option-area">
+        <div class="option-item">
+          <div class="option-content">
+            <p class="option-name">春</p>
+            <p><span id="spring-count">0</span>票</p>
+          </div>
+          <div class="gage">
+            <div id="spring-gage" class="gage-item"></div>
+          </div>
+          <div id="option-spring" class="option-comment"></div>
+        </div>
+
+        <!-- <div class="option-item">
+          <div class="option-content">
+            <p class="option-name">夏</p>
+            <p><span id="summer-count">0</span>票</p>
+          </div>
+          <div class="gage">
+            <div id="summer-gage" class="gage-item"></div>
+          </div>
+          <div id="option-summer" class="option-comment"></div>
+        </div>
+        <div class="option-item">
+          <div class="option-content">
+            <p class="option-name">秋</p>
+            <p><span id="autumn-count">0</span>票</p>
+          </div>
+          <div class="gage">
+            <div id="autumn-gage" class="gage-item"></div>
+          </div>
+          <div id="option-autumn" class="option-comment"></div>
+        </div>
+        <div class="option-item">
+          <div class="option-content">
+            <p class="option-name">冬</p>
+            <p><span id="winter-count">0</span>票</p>
+          </div>
+          <div class="gage">
+            <div id="winter-gage" class="gage-item"></div>
+          </div>
+          <div id="option-winter" class="option-comment"></div>
+        </div> -->
+      </div>
+
+      <div class="vote-area"></div>
+    </div>
+    <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ここから上に、ブラウザに表示したい内容を記述する ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 下の2行はHTMLとJavaScriptファイルを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/part2.js"></script>
+    <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 上の2行はHTMLとJavaScriptファイルを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+  </body>
+</html>
