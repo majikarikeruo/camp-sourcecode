@@ -14,3 +14,4 @@ $("#btn").on("click", function () {
   $(`#option-${season}`).append(`<div> ${comment}</div>`);
   $("#vote-comment").val("");
 });
+console.log(window);
