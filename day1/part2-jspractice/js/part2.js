@@ -1,17 +1,26 @@
-$("#btn").on("click", function () {
-  const season = $("#season-select").val();
-  let votesCount = $(`#${season}-count`).html();
-  votesCount = parseInt(votesCount) + 1;
-  $(`#${season}-count`).html(votesCount);
-  $(`#${season}-gage`).animate(
-    {
-      width: `${votesCount * 10}px`,
-    },
-    500
-  );
+/**
+ * $()
+ *
+ * $().on('click', function() {
+ *
+ * })
+ *
+ * const season = "";
+ * let votesCount = "";
+ */
 
-  const comment = $("#vote-comment").val();
-  $(`#option-${season}`).append(`<div> ${comment}</div>`);
-  $("#vote-comment").val("");
+console.log(46); //数値の1が表示
+console.log("日向坂"); //文字の1が表示
+console.log("日向坂46"); //こんにちはいう文字が表示
+
+let kinokoCount = 0;
+$("#btn-kinoko").on("click", function () {
+  kinokoCount = kinokoCount + 1;
+  $(`#count-kinoko`).html(kinokoCount);
 });
-console.log(window);
+
+$("#btn-takenoko").on("click", function () {
+  let votesCount = parseInt($(`#count-takenoko`).html()) + 1;
+  $(`#count-takenoko`).html(votesCount);
+  $("#gage-takenoko").animate({ height: `${10 * votesCount}px` }, 500);
+});

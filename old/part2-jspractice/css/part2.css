@@ -1,0 +1,80 @@
+body {
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 560px;
+  margin: auto;
+  padding: 80px;
+}
+
+/* header */
+.vote-header {
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* 投票部分 */
+.option-area {
+  margin-bottom: 64px;
+}
+.option-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  border-top: solid 1px #ddd;
+}
+.option-content {
+  display: flex;
+  align-items: center;
+}
+.option-name {
+  margin-right: 8px;
+}
+.option-comment {
+  margin-left: 16px;
+}
+.gage {
+  width: 200px;
+  margin-left: 16px;
+}
+.gage-item {
+  width: 0;
+  height: 24px;
+  background-color: #ff5757;
+}
+
+/* 投票部分 */
+.vote-area {
+  display: flex;
+  margin-bottom: 64px;
+}
+button {
+  margin-left: 8px;
+  margin-right: 16px;
+  padding: 8px 12px;
+  background-color: #5795ff;
+  color: #fff;
+  border: none;
+}
+
+.vote-select {
+  width: 80px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+}
+
+.vote-comment {
+  width: 320px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+}
+
+.vote-comment {
+  margin-left: 24px;
+}
