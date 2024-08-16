@@ -19,62 +19,57 @@ h1 {
   font-weight: bold;
 }
 
-/* 投票部分 */
-.option-area {
-  margin-bottom: 64px;
-}
-.option-item {
-  display: flex;
-  align-items: flex-start;
-  padding: 16px;
-  border-top: solid 1px #ddd;
-}
-.option-content {
-  display: flex;
-  align-items: center;
-}
-.option-name {
-  margin-right: 8px;
-}
-.option-comment {
-  margin-left: 16px;
-}
-.gage {
-  width: 200px;
-  margin-left: 16px;
-}
-.gage-item {
-  width: 0;
-  height: 24px;
-  background-color: #ff5757;
-}
-
-/* 投票部分 */
-.vote-area {
-  display: flex;
-  margin-bottom: 64px;
-}
 button {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0;
+  margin-top: 16px;
   padding: 8px 12px;
   background-color: #5795ff;
   color: #fff;
   border: none;
 }
 
-.vote-select {
-  width: 80px;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
+/* 投票部分 */
+.vote-header {
+  text-align: center;
 }
 
-.vote-comment {
-  width: 320px;
-  padding: 8px 12px;
-  border: 1px solid #ddd;
+.vote-body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+  padding: 16px;
+  gap: 20px;
 }
 
-.vote-comment {
-  margin-left: 24px;
+.vote-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vote-name {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.vote-counter {
+  display: flex;
+}
+
+.vote-count {
+  margin-left: 8px;
+}
+
+/* gage */
+.gage {
+  display: flex;
+  align-items: flex-end;
+  height: 320px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.gage-item {
+  width: 24px;
+  height: 0;
+  background-color: #ff5757;
 }

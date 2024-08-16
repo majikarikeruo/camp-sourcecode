@@ -6,8 +6,7 @@
     <title>練習</title>
 
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 下の2行はHTMLとCSSを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-    <link rel="stylesheet" href="css/part2-reset.css" />
-    <link rel="stylesheet" href="css/part2.css" />
+
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 上の2行はHTMLとCSSを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
   </head>
 
@@ -16,61 +15,40 @@
 
     <div class="wrapper">
       <div class="vote-header">
-        <h1>投票システム</h1>
-        <p>好きな季節は？</p>
+        <h1>究極の選択！</h1>
+        <p>きのこの山とたけのこの里、どっちが良い？</p>
       </div>
 
-      <div class="option-area">
-        <div class="option-item">
-          <div class="option-content">
-            <p class="option-name">春</p>
-            <p><span id="spring-count">0</span>票</p>
-          </div>
+      <div class="vote-body">
+        <div class="vote-content">
           <div class="gage">
-            <div id="spring-gage" class="gage-item"></div>
+            <div class="gage-item" id="gage-kinoko"></div>
           </div>
-          <div id="option-spring" class="option-comment"></div>
+          <p class="vote-name">きのこの山</p>
+          <div class="vote-counter">
+            <p class="vote-count" id="count-kinoko">0</p>
+          </div>
+          <button class="btn-vote" id="btn-kinoko">きのこの山に投票する</button>
         </div>
-
-        <!-- <div class="option-item">
-          <div class="option-content">
-            <p class="option-name">夏</p>
-            <p><span id="summer-count">0</span>票</p>
-          </div>
+        <div class="vote-content">
           <div class="gage">
-            <div id="summer-gage" class="gage-item"></div>
+            <div class="gage-item" id="gage-takenoko"></div>
           </div>
-          <div id="option-summer" class="option-comment"></div>
+          <p class="vote-name">たけのこの里</p>
+          <div class="vote-counter">
+            <p class="vote-count" id="count-takenoko">0</p>
+            <p>票</p>
+          </div>
+          <button class="btn-vote" id="btn-takenoko">
+            たけのこの里に投票する
+          </button>
         </div>
-        <div class="option-item">
-          <div class="option-content">
-            <p class="option-name">秋</p>
-            <p><span id="autumn-count">0</span>票</p>
-          </div>
-          <div class="gage">
-            <div id="autumn-gage" class="gage-item"></div>
-          </div>
-          <div id="option-autumn" class="option-comment"></div>
-        </div>
-        <div class="option-item">
-          <div class="option-content">
-            <p class="option-name">冬</p>
-            <p><span id="winter-count">0</span>票</p>
-          </div>
-          <div class="gage">
-            <div id="winter-gage" class="gage-item"></div>
-          </div>
-          <div id="option-winter" class="option-comment"></div>
-        </div> -->
       </div>
-
-      <div class="vote-area"></div>
     </div>
     <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ここから上に、ブラウザに表示したい内容を記述する ↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
 
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 下の2行はHTMLとJavaScriptファイルを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/part2.js"></script>
+
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 上の2行はHTMLとJavaScriptファイルを繋ぐ役割を果たしています ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
   </body>
 </html>
