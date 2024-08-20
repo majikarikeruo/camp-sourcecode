@@ -1,6 +1,6 @@
 $("#btn").on("click", function () {
   const artistName = $("#keyword").val();
-  const requestUrl = `https://itunes.apple.com/search?lang=ja_JP&entry=music&media=music&country=JP&term=YOASOBI`;
+  const requestUrl = `https://itunes.apple.com/search?lang=ja_JP&entry=music&media=music&country=JP&term=${artistName}`;
 
   $.getJSON(requestUrl, function (data) {
     //　情報を取得できた後にやりたいことをここに書く
