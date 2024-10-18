@@ -15,34 +15,46 @@
     <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ここから下に、ブラウザに表示したい内容を記述する ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
 
     <div class="wrapper">
-      <div class="vote-header">
-        <h1>究極の選択！</h1>
-        <p>きのこの山とたけのこの里、どっちが良い？</p>
+      <div class="header">
+        <h1>JavaScript練習</h1>
       </div>
 
-      <div class="vote-body">
+      <div class="content">
+        <h2>1. 投票UI</h2>
         <div class="vote-content">
-          <div class="gage">
-            <div class="gage-item" id="gage-kinoko"></div>
-          </div>
           <p class="vote-name">きのこの山</p>
           <div class="vote-counter">
             <p class="vote-count" id="count-kinoko">0</p>
           </div>
           <button class="btn-vote" id="btn-kinoko">きのこの山に投票する</button>
         </div>
-        <div class="vote-content">
-          <div class="gage">
-            <div class="gage-item" id="gage-takenoko"></div>
+      </div>
+      <div class="content">
+        <h2>2. LINEメッセージUI</h2>
+        <div class="line-message-content">
+          <div class="line-message-timeline"></div>
+
+          <input
+            type="text"
+            class="line-message-input"
+            id="line-message-input"
+          />
+          <button class="line-message-btn" id="line-message-btn">送信</button>
+        </div>
+      </div>
+      <div class="content">
+        <h2>3. 画像切り替え UI</h2>
+        <div class="image-switch-content">
+          <div class="image-switch-text-wrapper">
+            <img
+              src="images/stamp18.png"
+              alt="画像1"
+              class="image-switch-image"
+              id="image-switch-image1"
+            />
           </div>
-          <p class="vote-name">たけのこの里</p>
-          <div class="vote-counter">
-            <p class="vote-count" id="count-takenoko">0</p>
-            <p>票</p>
-          </div>
-          <button class="btn-vote" id="btn-takenoko">
-            たけのこの里に投票する
-          </button>
+          <button class="image-switch-btn" id="image-switch-btn1">画像1</button>
+          <button class="image-switch-btn" id="image-switch-btn2">画像2</button>
         </div>
       </div>
     </div>
